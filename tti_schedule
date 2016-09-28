@@ -23,7 +23,7 @@ fi
 
 curl --silent "http://m.tsi.lv/schedule/?login=st$STUDENT_CODE$STR_OFFSET" | \
     sed -n -E -e '/<table/,/<\/table>/p' | \
-    sed -n -E -e 's/^.*<b>([[:digit:]]+:[[:digit:]]+ [A|P]M).*<td align="center" valign="middle">([[:digit:]]+)<\/td>.*<td align="center" valign="middle" rowspan="2">(.+)<\/td>.*$/\1\t\2\t\3/p' | \
+    sed -n -E -e 's/^.*<b>([[:digit:]]+:[[:digit:]]+ [A|P]M).*<td align="center" valign="middle">([[:digit:]]+|[I]+)<\/td>.*<td align="center" valign="middle" rowspan="2">(.+)<\/td>.*$/\1\t\2\t\3/p' | \
     awk -F "\t" 'BEGIN { OFS=FS }{("date --date=\""$1"\" +%R") | getline $1; print }' | \
     awk -F "\t" "BEGIN { $TRANSLATIONS } { printf \"%-5s %8s %32s\n\", \$1, \$2, \$3 in T ? T[\$3] : \$3 }"
 
