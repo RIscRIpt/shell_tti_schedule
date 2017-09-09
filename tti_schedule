@@ -9,12 +9,18 @@ STUDENT_CODE=$1
 OFFSET=$2
 
 TRANSLATIONS='
-T["Funkcionālā programmēšana "]               = "Functional Programming"
-T["Statistisko datu datorapstrādes metodes"]  = "Descriptive Statistics"
-T["Datortīkli"]                               = "Computer Networks"
-T["Diskrētā matemātika KD"]                   = "Discrete Mathematics CW"
-T["Optimizācijas  metodes"]                   = "Optimization Methods"
-T["Programmatūras konstruēšanas tehnoloģija"] = "Software Engineering"
+T["Funkcionālā programmēšana "]                 = "Functional Programming"
+T["Statistisko datu datorapstrādes metodes"]    = "Descriptive Statistics"
+T["Datortīkli"]                                 = "Computer Networks"
+T["Diskrētā matemātika KD"]                     = "Discrete Mathematics CW"
+T["Optimizācijas  metodes"]                     = "Optimization Methods"
+T["Programmatūras konstruēšanas tehnoloģija"]   = "Software Engineering"
+
+T["Kompilatoru projektēšana"]                   = "Compiler Construction"
+T["Datorgrafikas algoritmiskie līdzekļi"]       = "Computer Graphics"
+T["Skaitliskās metodes"]                        = "Numerical Methods"
+T["Web-aplikāciju izstrādāšanas līdzekļi"]      = "Web App Dev Tools"
+T["Programmatūras izstrādes projektu vadība"]   = "Software Project Management"
 '
 
 if [ -n "$OFFSET" ]; then
