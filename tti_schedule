@@ -21,6 +21,10 @@ T["Datorgrafikas algoritmiskie līdzekļi"]       = "Computer Graphics"
 T["Skaitliskās metodes"]                        = "Numerical Methods"
 T["Web-aplikāciju izstrādāšanas līdzekļi"]      = "Web App Dev Tools"
 T["Programmatūras izstrādes projektu vadība"]   = "Software Project Management"
+
+T["Ievads intelektuālās sistēmās"]              = "Intelligent Systems Intro"
+T["Java aplikācijas izstrāde"]                  = "Java Application Development"
+T["Datortīklu drošība"]                         = "Computer Network Security"
 '
 
 if [ -n "$OFFSET" ]; then
